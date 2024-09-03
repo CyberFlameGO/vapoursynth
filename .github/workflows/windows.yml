@@ -184,7 +184,7 @@ jobs:
         architecture: ${{ matrix.arch }}
 
     - name: Download build artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Wheels
     
@@ -207,7 +207,7 @@ jobs:
         python-version: "3.11"
 
     - name: Download build artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: Wheels
 
